@@ -1,11 +1,12 @@
 #Escribir un programa para comprar un helado.
 #Identificar cuanto se le quiere agregar.
 print("Que helado y topping quieres comprar")
-h1 = 1.900
-t1 = float (str(1.000 + h1))
-t2 = float (str(1.500 + h1))
-t3 = float (str(2.500 + h1))
-t4 = float (str(950 + h1))
+Valor_final = 0
+h1 = 1900
+t1 = 1000 
+t2 = 1500 
+t3 = 2500 
+t4 = 950 
 helado1 = (input("El helado sin topping: ")) 
 if helado1 == "si" :
     print("El costo del helado es: ", h1)
@@ -31,6 +32,14 @@ if topping4 == "si" :
     print("El costo del topping es: ", t4)
 else:
     print("ya se acabaron los topping")
+def Valor_final(helado, topping):
+    Valor_final = 0
+    Valor_final = h1 + topping
+    if (helado1-topping4) == "si":
+        print("El costo total del helado es: ", Valor_final)
+    else:
+        print("comentarios del usuario")
+Valor_final(h1,input())
 usuario = (input("Encontro el topping deseado?: "))
 if usuario == "si":
     print("Gracias por su compra")
